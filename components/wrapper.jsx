@@ -6,9 +6,12 @@ var ReactDOM = require("react-dom");
 
     module.exports = React.createClass({
       render: function() {
+        var ServerMessage = require('./server_message.jsx');
+        var TodoList = require('./todos.jsx');
         return (
           <div>
-            <h1>Hello World</h1>
+            <ServerMessage />
+            <TodoList />
           </div>
         );
       }
